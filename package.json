@@ -1,0 +1,31 @@
+{
+  "name": "node-cal-math-calendars",
+  "version": "1.0.0",
+  "description": "Group TDD Project",
+  "main": "./bin/node-cal",
+  "bin": {
+    "node-cal": "./bin/node-cal"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R nyan",
+    "coverage": "istanbul cover _mocha -- -R nyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nss-day-cohort-14/node-cal-math-calendars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nss-day-cohort-14/node-cal-math-calendars/issues"
+  },
+  "homepage": "https://github.com/nss-day-cohort-14/node-cal-math-calendars#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.2"
+  }
+}
