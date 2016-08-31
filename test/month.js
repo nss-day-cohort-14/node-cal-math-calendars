@@ -38,7 +38,7 @@ describe('month', () => {
     it('should be a function', () => {
       isFunction(getMonthName)
     })
-    it('should return an string', () => {
+    it('should return a string', () => {
       let monthNum = 5
       let expected = 'May'
       strictEqual(getMonthName(monthNum), expected)
@@ -49,11 +49,11 @@ describe('month', () => {
     // })
     it('should take an argument less than 13', () => {
       let month = 3
-      isBelow(getMonthName(month), 13)
+      isBelow(month, 13)
     })
     it('should take an argument greater than 0', () => {
       let month = 6
-      isAtLeast(getMonthName(month), 1)
+      isAtLeast(month, 1)
     })
   })
 })
