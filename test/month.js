@@ -2,7 +2,7 @@
 
 const { assert: { isFunction, strictEqual, isNumber, isBelow, isAtLeast } } = require('chai')
 
-const { getCurrentMonth, getSpecificMonth } = require('../lib/month')
+const { getCurrentMonth, getSpecificMonth, getMonthName } = require('../lib/month')
 
 describe('month', () => {
   describe('getCurrentMonth', () => {
@@ -32,6 +32,28 @@ describe('month', () => {
     it('should take an argument greater than 0', () => {
       let month = '6'
       isAtLeast(getSpecificMonth(month), 1)
+    })
+  })
+  describe('getMonthName', () => {
+    it('should be a function', () => {
+      isFunction(getMonthName)
+    })
+    it('should return an string', () => {
+      let monthNum = 5
+      let expected = 'May'
+      strictEqual(getMonthName(monthNum), expected)
+    })
+    // it('should take a number as argument', () => {
+    //   let monthNumber = 4
+    //   isNumber(getMonthName(monthNumber))
+    // })
+    it('should take an argument less than 13', () => {
+      let month = 3
+      isBelow(getMonthName(month), 13)
+    })
+    it('should take an argument greater than 0', () => {
+      let month = 6
+      isAtLeast(getMonthName(month), 1)
     })
   })
 })
