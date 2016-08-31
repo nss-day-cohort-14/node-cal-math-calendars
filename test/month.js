@@ -43,17 +43,5 @@ describe('month', () => {
       let expected = 'May'
       strictEqual(getMonthName(monthNum), expected)
     })
-    // it('should take a number as argument', () => {
-    //   let monthNumber = 4
-    //   isNumber(getMonthName(monthNumber))
-    // })
-    it('should take an argument less than 13', () => {
-      let month = 3
-      isBelow(month, 13)
-    })
-    it('should take an argument greater than 0', () => {
-      let month = 6
-      isAtLeast(month, 1)
-    })
   })
 })
