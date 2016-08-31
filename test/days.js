@@ -39,7 +39,7 @@ describe('days', () => {
     })
     it('should handle February in a leap year', () => {
       let monthNum = 2
-      let year = 1900
+      let year = 2400
       let expected = 29
       strictEqual(getMonthDays(monthNum, year), expected)
     })
