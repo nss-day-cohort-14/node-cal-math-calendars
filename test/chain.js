@@ -2,7 +2,7 @@
 
 const { assert: { isFunction } } = require('chai')
 
-const { getLeftover, makeEnds, addPad} = require('../lib/chain')
+const { getLeftover } = require('../lib/chain')
 
 describe('chain', () => {
 	describe('getLeftover', () => {
