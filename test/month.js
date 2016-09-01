@@ -19,7 +19,7 @@ describe('month', () => {
     })
     it('should return a string', () => {
       let monthNum = 5
-      let expected = 'June'
+      let expected = 'May'
       strictEqual(getMonthName(monthNum), expected)
     })
   })
