@@ -14,7 +14,7 @@ describe('month', () => {
     })
   })
   describe('getSpecificMonth', () => {
-    it('should be a function', () => {
+      it('should be a function', () => {
       isFunction(getSpecificMonth)
     })
     it('should handle an argument', () => {
