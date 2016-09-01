@@ -1,6 +1,6 @@
 'use strict';
 
-const { assert: { isFunction, strictEqual, isNumber, equal, isArray }} = require('chai')
+const { assert: { isFunction, strictEqual, isNumber, equal, isArray, deepEqual }} = require('chai')
 
 const { getCurrentYear, getSpecificYearMonth } = require('../lib/year')
 
@@ -18,9 +18,10 @@ describe('year', () => {
       isFunction(getSpecificYearMonth)
     })
     it('should handle 2 arguments', () => {
-      let yearNumeral = '1990'
+      let yearNum = '1990'
       let monthNum = '2'
-      strictEqual(getSpecificYearMonth(yearNumeral, monthNum), [1990, 2])
+      let expected = [1990, 2]
+      deepEqual(getSpecificYearMonth(yearNum, monthNum), expected)
     })
     it('should handle an argument four digits in length', () => {
       let yearNumeral = '1996'
