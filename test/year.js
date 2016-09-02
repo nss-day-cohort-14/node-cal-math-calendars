@@ -14,7 +14,7 @@ describe('year', () => {
     })
   })
   describe('getSpecificYearMonth', () => {
-      it('should be a function', () => {
+    it('should be a function', () => {
       isFunction(getSpecificYearMonth)
     })
     it('should handle 2 arguments', () => {
