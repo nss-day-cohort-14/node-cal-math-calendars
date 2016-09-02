@@ -23,9 +23,13 @@ describe('chain', () => {
 			isNumber(leftOver)
 		})
 	})
-	describe('addPad', () => {
+	describe('addPad(leftEnd)', () => {
 		it('should be a function', () => {
 			isFunction(addPad)
+		})
+		it('should take one argument which is a numeral', () => {
+			let leftEnd = 6
+			isNumber(leftEnd)
 		})
 	})
 })
